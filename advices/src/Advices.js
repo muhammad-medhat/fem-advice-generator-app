@@ -22,7 +22,7 @@ export const Advices = () => {
   return (
     <div className="advice-card">
       <div className="advice-id">Advice #{adviceId ? adviceId : "xxx"}</div>
-      <div className="advice-text">{advice ? advice : "NNNNNNNNNNNNNN"} </div>
+      <div className="advice-text">{advice ? advice : "Error..."} </div>
       <div
         className="advice-divider"
         style={{
