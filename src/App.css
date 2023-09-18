@@ -32,16 +32,18 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  width: 40%;
+  max-width: 40%;
   padding: 3rem;
   border-radius: 10px;
   text-align: center;
 }
 .advice-id {
   color: var(--NeonGreen);
+  font-size: small;
 }
 .advice-text {
   color: var(--LightCyan);
+  font-size: 20px;
 }
 .dice,
 .dice-img {
@@ -51,4 +53,29 @@ body {
 }
 .dice:hover {
   box-shadow: 2px 2px 40px 7px var(--NeonGreen);
+}
+
+@media (max-width: 984px) {
+  .advice-text {
+    font-size: 16px;
+  }
+  .advice-card {
+    max-width: 50%;
+    gap: 0.75rem;
+  }
+}
+@media (max-width: 965px) {
+  .advice-card {
+    max-width: 60%;
+  }
+}
+@media (max-width: 490px) {
+  .advice-card {
+    min-width: 80%;
+  }
+}
+@media (max-width: 721px) {
+  .advice-card {
+    max-width: 60%;
+  }
 }

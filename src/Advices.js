@@ -21,8 +21,8 @@ export const Advices = () => {
 
   return (
     <div className="advice-card">
-      <div className="advice-id">Advice #{adviceId ? adviceId : "xxx"}</div>
-      <div className="advice-text">{advice ? advice : "Error..."} </div>
+      <h1 className="advice-id">Advice #{adviceId ? adviceId : "xxx"}</h1>
+      <q className="advice-text">{advice ? advice : "Error..."} </q>
       <div
         className="advice-divider"
         style={{
@@ -56,6 +56,7 @@ export const Advices = () => {
           <button
             className="dice-img"
             onClick={getAdvice}
+            aria-label="Get new advice"
             style={{
               backgroundImage: `url( ${dice})`,
               backgroundSize: "contain",
