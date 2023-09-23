@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--DarkBlue);
+}
+
+.advice-card {
+  background-color: var(--DarkGrayishBlue);
+  border-radius: 10px;
+  margin: 5rem 0.5rem;
+}
+/******************************/
+.card-body {
+  gap: 0.75em;
+}
+img.card-img {
+  border: none !important;
+}
+/**********************************/
+.advice-id {
+  color: var(--NeonGreen);
+  font-size: small;
+}
+.advice-text {
+  color: var(--LightCyan);
+  /* font-size: 20px;
+  min-height: 30vh;
+  font-size: 20px;
+  padding: 2rem; */
+}
+.dice,
+.dice-img {
+  background-color: var(--NeonGreen);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.dice:hover {
+  box-shadow: 2px 2px 40px 7px var(--NeonGreen);
+}
+
+/*
+Common Breakpoints For Responsive Design
+
+1920×1080
+360×800 
+1366×768
+1536×864
+390×844
+414×896
+412×915
+393×873
+1280×720
+360×780
+360×640
+1440×900
+375×812
+1600×900
+2560×1440
+810×1080
+
+*/ /*
+@media (min-width: 1920px) {
+}
+@media (min-width: 360px) {
+}
+@media (min-width: 1366px) {
+}
+@media (min-width: 1536px) {
+}
+@media (min-width: 390px) {
+}
+@media (min-width: 414px) {
+}
+@media (min-width: 412px) {
+}
+@media (min-width: 393px) {
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 360px) {
+}
+@media (min-width: 360px) {
+}
+@media (min-width: 1440px) {
+}
+@media (min-width: 375px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 2560px) {
+}
+@media (min-width: 810px) {
+}*/
+/********************************/
+/* @media (min-width: 768px) { */
+@media (orientation: landscape) {
+  .advice-card {
+    background-color: green;
+    /* max-width: 60vw; */
+  }
+}
+@media ((min-width: 450px) and (orientation:landscape)) {
+  .advice-card {
+    /* background-color: red; */
+    max-width: 60vw;
+  }
+}
+@media (min-width: 450px) {
+  .advice-card {
+    /* min-width: 60vh; */
+  }
+}
+/* @media (min-width: 611px) {
+  .advice-card {
+    max-width: 60vw;
+  }
+} */
+@media (min-width: 768px) {
+  .advice-card {
+    max-width: 50%;
+    /* background-color: blue; */
+  }
+}

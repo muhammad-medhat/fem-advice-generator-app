@@ -21,8 +21,13 @@ export const Advices = () => {
 
   return (
     <div className="advice-card">
-      <h1 className="advice-id">Advice #{adviceId ? adviceId : "xxx"}</h1>
-      <q className="advice-text">{advice ? advice : "Error..."} </q>
+      <header>
+        <h1 className="advice-id">Advice #{adviceId ? adviceId : "xxx"}</h1>
+      </header>
+      <p className="advice-text">
+        <span>&#8220;</span>
+        {advice ? advice : "Error..."} <span>&rdquo;</span>
+      </p>
       <div
         className="advice-divider"
         style={{
