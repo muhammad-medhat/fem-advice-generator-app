@@ -1,12 +1,25 @@
 import logo from "./logo.svg";
-//import "bootstrap/dist/css/bootstrap.min.css";
+import design from "./design/desktop-design.jpg";
+// import design from "./design/mobile-design.jpg";
 
 import "./mfa.css";
 import { Advices } from "./AdvicesMFA";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={
+        {
+          // backgroundImage: `url(${design})`,
+          // backgroundSize: "100%",
+          // backgroundRepeat: "no-repeat",
+          // backgroundPosition: "center",
+          // height: "100vh",
+          // width: "100%",
+        }
+      }
+    >
       <Advices />
     </div>
   );

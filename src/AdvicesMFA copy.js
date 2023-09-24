@@ -27,10 +27,10 @@ export const Advices = () => {
   return (
     <Container
       fluid
-      className="d-flex align-items-center justify-content-center "
-      style={{ opacity: 0.4, minHeight: "100%" }}
+      className="d-flex align-items-center justify-content-center"
     >
-      <Card className="p-4 advice-card text-center">
+      {/* <Card style={{ width: "40%" }} className="advice-card"> */}
+      <Card className="advice-card text-center">
         <Card.Body className="d-flex flex-column align-items-center justify-content-center">
           <Card.Title>
             <h1 className="advice-id">Advice #{adviceId ? adviceId : "xxx"}</h1>
@@ -44,13 +44,12 @@ export const Advices = () => {
           <div
             className="dice"
             style={{
-              height: "80px",
-              width: "80px",
+              height: "50px",
+              width: "50px",
               borderRadius: "50%",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginBottom: "-4em",
             }}
           >
             <Button
@@ -63,8 +62,8 @@ export const Advices = () => {
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
-                height: "35px",
-                width: "35px",
+                height: "24px",
+                width: "24px",
               }}
             ></Button>
           </div>
