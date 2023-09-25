@@ -14,7 +14,7 @@ function App() {
           // backgroundImage: `url(${design})`,
           // backgroundSize: "100%",
           // backgroundRepeat: "no-repeat",
-          // backgroundPosition: "center",
+          // backgroundPosition: "top",
           // height: "100vh",
           // width: "100%",
         }

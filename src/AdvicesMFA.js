@@ -28,18 +28,30 @@ export const Advices = () => {
     <Container
       fluid
       className="d-flex align-items-center justify-content-center "
-      style={{ opacity: 0.4, minHeight: "100%" }}
+      style={
+        {
+          // display: "flex",
+          // alignContent: "center",
+          // justifyContent: "center",
+          // opacity: 0.4,
+          // minHeight: "100%",
+          // backgroundColor: "black",
+        }
+      }
     >
-      <Card className="p-4 advice-card text-center">
+      <Card className="advice-card text-center">
         <Card.Body className="d-flex flex-column align-items-center justify-content-center">
           <Card.Title>
             <h1 className="advice-id">Advice #{adviceId ? adviceId : "xxx"}</h1>
           </Card.Title>
-          <Card.Text className="advice-text p-3">
+          <Card.Text className="advice-text">
             <span>&#8220;</span>
             {advice ? advice : "Error..."} <span>&rdquo;</span>
           </Card.Text>
-          <Card.Img src={divider} className="advice-divider"></Card.Img>
+          <Card.Img
+            src={divider}
+            className="advice-divider"
+          ></Card.Img>
 
           <div
             className="dice"
